@@ -1,0 +1,140 @@
+#! /bin/bash
+
+ bold=`echo -en "\e[1m"`
+ underline=`echo -en "\e[4m"`
+ dim=`echo -en "\e[2m"`
+ strickthrough=`echo -en "\e[9m"`
+ blink=`echo -en "\e[5m"`
+ reverse=`echo -en "\e[7m"`
+ hidden=`echo -en "\e[8m"`
+ normal=`echo -en "\e[0m"`
+ black=`echo -en "\e[30m"`
+ red=`echo -en "\e[31m"`
+ green=`echo -en "\e[32m"`
+ orange=`echo -en "\e[33m"`
+ blue=`echo -en "\e[34m"`
+ purple=`echo -en "\e[35m"`
+ aqua=`echo -en "\e[36m"`
+ gray=`echo -en "\e[37m"`
+ darkgray=`echo -en "\e[90m"`
+ lightred=`echo -en "\e[91m"`
+ lightgreen=`echo -en "\e[92m"`
+ lightyellow=`echo -en "\e[93m"`
+ lightblue=`echo -en "\e[94m"`
+ lightpurple=`echo -en "\e[95m"`
+ lightaqua=`echo -en "\e[96m"`
+ white=`echo -en "\e[97m"`
+ default=`echo -en "\e[39m"`
+ BLACK=`echo -en "\e[40m"`
+ RED=`echo -en "\e[41m"`
+ GREEN=`echo -en "\e[42m"`
+ ORANGE=`echo -en "\e[43m"`
+ BLUE=`echo -en "\e[44m"`
+ PURPLE=`echo -en "\e[45m"`
+ AQUA=`echo -en "\e[46m"`
+ GRAY=`echo -en "\e[47m"`
+ DARKGRAY=`echo -en "\e[100m"`
+ LIGHTRED=`echo -en "\e[101m"`
+ LIGHTGREEN=`echo -en "\e[102m"`
+ LIGHTYELLOW=`echo -en "\e[103m"`
+ LIGHTBLUE=`echo -en "\e[104m"`
+ LIGHTPURPLE=`echo -en "\e[105m"`
+ LIGHTAQUA=`echo -en "\e[106m"`
+ WHITE=`echo -en "\e[107m"`
+ DEFAULT=`echo -en "\e[49m"`
+
+clear
+echo $bold
+echo -e "                              $lightaqua ██ ▄█▀ $lightred▒$lightaqua█████  $lightred▒$lightaqua██   ██$lightred▒"
+echo -e "                              $lightaqua ██▄█$lightred▒$lightred ▒$lightaqua██$lightred▒$lightaqua  ██$lightred▒▒▒$lightaqua █ █ $lightred▒░"
+echo -e "                              $lightred▓$lightaqua███▄$lightred░ ▒$lightaqua██$lightred░$lightaqua  ██$lightred▒░░$lightaqua  █   $lightred░"
+echo -e "                              $lightred▓$lightaqua██ █▄ $lightred▒$lightaqua██   ██$lightred░ ░ $lightaqua█ █ $lightred▒ "
+echo -e "                              $lightred▒$lightaqua██$lightred▒ $lightaqua█▄$lightred░ $lightaqua████$lightred▓▒░▒$lightaqua██$lightred▒ ▒$lightaqua██$lightred▒"
+echo -e "                              $lightred▒ ▒▒ ▓▒░ ▒░▒░▒░ ▒▒ ░ ░▓ ░"
+echo -e "                              ░ ░▒ ▒░  ░ ▒ ▒░ ░░   ░▒ ░$lightgreen/|$white V:1.0$lightaqua Network $lightyellow/$lightaqua WiFi$lightred $white Hacking Tool.$lightgreen|\ $lightred"
+echo -e "                              ░ ░░ ░ ░ ░ ░ ▒   ░    ░  "
+echo -e "                              ░  ░       ░ ░   ░    ░ "
+echo -e "                $lightyellow########### $lightgreen[$lightyellow CODED BY$lightred Ghosty/DeaDHackS $lightgreen]$lightyellow ###########"
+echo -e ""
+echo -e "                        $lightred---------- $lightgreen|$lightaqua Modules Menu $lightgreen|$lightred ----------$lightyellow"
+echo -e "                                   V              V"
+echo -e "         $lightaqua[:1:] WiFi$lightred Cracking$lightaqua WPE/WPS/WPA/WPA 2     $lightaqua[:2:]$lightred Info$lightaqua Gathering"
+echo -e "         $lightaqua[:3:]$lightred Crack MD5 Hash Password             $lightaqua[:4:]$lightgreen MISCs$white &$lightgreen Other"
+echo -e "         $lightaqua[:5:]$lightyellow WiFi$lightred Attacks                        $lightaqua[:99:]$lightgreen About"$nornal
+echo -e "         $lightaqua[:terminal:]$lightyellow Launch impleted$lightred KoX Shell Terminal!"
+echo $lightaqua 
+read -p "KoX$lightred $USERNAME$lightgreen >$lightred $HOSTNAME$white : " modulechoice
+
+## 1 ##
+if [ $modulechoice == 1 ]
+then
+  exec /bin/KoX/Config/WCrack.sh 
+fi
+## 1 end ##
+
+## 2 ##
+if [ $modulechoice == 2 ]
+then
+  exec /bin/KoX/Config/Info.sh 
+fi
+## 2 end ##
+
+## 3 ##
+if [ $modulechoice == 3 ]
+then
+  exec /bin/KoX/Config/PCrack.sh 
+fi
+## 3 end ##
+
+
+## 4 ##
+if [ $modulechoice == 4 ]
+then
+  exec /bin/KoX/Config/Misc.sh 
+fi
+## 4 end ##
+
+## 5 ##
+if [ $modulechoice == 5 ]
+then
+  exec /bin/KoX/Config/WAttacks.sh 
+fi
+
+## 5 end ##
+
+## 99 ##
+if [ $modulechoice == 99 ]
+then
+  exec /bin/KoX/Config/About.sh 
+fi
+## 99 end ##
+## terminal ##
+if [ $modulechoice == terminal ]
+then
+  echo -e "$lightgreen[+]$lightyellow Launching kTerminal ..."
+  sleep 2
+  exec /bin/KoX/kterminal.sh
+fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
